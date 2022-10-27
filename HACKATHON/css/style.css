@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+html, body{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+.center{
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+:root{
+    --black: #222222ff;
+    --gray: #bac1b8ff;
+    --blue: #4e7ddcff;
+    --yellow: #ffec3fff;
+    --orange: #ff8c42ff;
+}
+/******************************/
+
+.menu{
+    padding: 0 40px;
+    width: 100%;
+    height: 15vh;
+    background-color: #4e7ddcff;
+}
+
+.menu > .logo {
+    position: relative;
+    line-height: 15vh;
+    float: left;
+    color: white;
+    width: 40px;
+}
+
+.menu > .opc{
+    position: relative;
+    width: 60%;
+    float: right;
+}
+
+.menu > .opc > ul > li{
+    line-height: 15vh;
+    display: inline-block;
+    list-style: none;
+    width: calc(100% / 6);
+    margin: -10px;
+    text-align: center;
+}
+
+.menu > .opc > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+.banner{
+    height: 85vh;
+    background-image: url('../img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlaw{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 85vh;
+    padding: 0 12vh;
+}
+
+.overlaw > .descricao{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+    color: white;
+    font-size: 15pt;
+}
+
+.overlaw > .descricao h1{
+    color: white;
+}
+
+.overlaw > .descricao > div{
+    background-color: none;
+    margin: 15px 0;
+}
+
+.overlaw > .descricao > div > a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transform: 0.5s;
+}
+
+.overlaw > .descricao > div > a:hover{
+    background-color: rgba(255, 254, 254, 0.3);
+}
+
+.content{
+    background-color: black;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    padding:  5vh 10vw;
+}
+
+.cards > .box{
+    padding: 10px;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 0 10px;
+    border: 1px solid rgb(255, 254, 254);
+    border-radius: 10px;
+}
+
+.cards > .box > div{
+    width: 100%;
+    padding-bottom: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+
+.cards > .box > a{
+    display: inline-block;
+    width: 50%;
+    margin: 10px 0;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 5px;
+    background-color: none;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.cards > .box > a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.faixa{
+    padding: 40px 40px;
+    background-color: #bac1b8ff;
+}
+
+.faixa > h2, h1{
+    color: black;
+}
+
+.faixa h1{
+    font-size: 20pt;
+}
+
+.faixa h2{
+    font-weight: normal;
+    font-family: 12pt;
+}
+
+.faixa a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 7px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.faixa a:hover{
+    background-color: rgba(108, 107, 107, 0.3);
+}
+
+section > .empresa{
+    display: block;
+    text-align: center;
+    width: 70vw;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+section > .empresa div{
+    width: 50%;
+    padding-bottom: 50%;
+    display: inline-block;
+    margin: 30px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+section > .empresa h2{
+    font-size: 30pt;
+}
+
+section > .empresa p{
+    font-size: 15pt;
+}
+
+section > .empresa a{
+    font-size: 15pt;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+section > .empresa a:hover{
+    background-color: rgba(255, 254, 254, 0.3);
+}
+
+footer{
+    background-color: #4e7ddcff;
+    height: 10vh;
+    text-align: center;
+}
+
+footer > p{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+/********************************/
+
+.content > .title{
+    text-align:center;
+    padding-top: 40px;
+}
+
+.content > .title > h1{
+    color: white;
+}
+
+.conteiner-empresas{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 100px; 
+}
+
+.conteiner-empresas > .single-empresas{
+    width: calc(100% / 5);
+    margin: 10px 25px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.conteiner-empresas > .single-empresas > div{
+    width: 100%;
+    padding-bottom:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 10px;
+}
+
+.conteiner-empresas > .single-empresas p{
+    font-weight: bold;
+    font-size: 17pt;
+}
+
+.conteiner-empresas > .single-empresas a{
+    display: inline-block;
+    margin: 0 auto;
+    border: 1px solid white;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 5px 5px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+
+.conteiner-empresas > .single-empresas a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/************************************************/
+.logo2{
+    background-color: var(--blue);
+}
+
+.login{
+    background-color: var(--black);
+}
+
+.full-height{
+    height: 100vh;
+}
+
+/*********************************************/
+
+.video{
+    width: 100%;
+    text-align: center;
+}
+
+.video > iframe{
+    margin: 40px 0;
+    width: 900px;
+    height: 550px;
+}
+
+.video > .texto>  ul{
+    margin: 0 auto;
+    width: 50%;
+    list-style: none;
+    padding-bottom: 40px;
+}
+.video >.texto>  ul > li{
+    padding: 10px;
+    margin-top: 1px; 
+    background-color: gray;
+    cursor: pointer;
+}
+
+.form{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.pergunta{
+    border-radius: 20px;
+    padding: 30px;
+    background-color: gray;
+    margin-bottom: 20px;
+}
+
+.form > input[type='submit']{
+    width: 120px;
+    height: 40px;
+    background: none;
+    border: 1px solid white;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); 
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.form > input[type = 'submit']:hover{
+    background-color: rgba(255, 254, 254, 0.3);
+}
